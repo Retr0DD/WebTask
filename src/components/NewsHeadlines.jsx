@@ -45,6 +45,8 @@ const NewsHeadlines = () => {
           )}
           <h3 style={{ marginTop: '10px' }}>{article.title}</h3>
           <p>{article.description}</p>
+          <p>{article.author}</p>
+          <p>{article.publishedAt}</p>
         </div>
       ))}
     </div>
