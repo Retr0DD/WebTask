@@ -7,15 +7,23 @@ const NewsHeadlines = () => {
 
   useEffect(() => {
     const fetchHeadlines = async () => {
-      try {
-        const response = await axios.get('/api/news');
-        console.log('Fetched data:', response.data);
-        setHeadlines(response.data.articles || []); // Safeguard against undefined articles
-      } catch (error) {
-        console.error('Error fetching news headlines:', error);
-        setError('Failed to fetch news headlines');
-      }
-    };
+  try {
+    console.log('Fetching headlines...');
+    const response = await axios.get('http://localhost:3000/api/news');
+    console.log('Response received:', response);
+    const articles = response.data.articles;
+    if (articles) {
+      console.log('Articles found:', articles);
+      setHeadlines(articles);
+    } else {
+      console.warn('No articles found:', response.data);
+      setError('No news articles available');
+    }
+  } catch (error) {
+    console.error('Error fetching news headlines:', error);
+    setError('Failed to fetch news headlines');
+  }
+};
 
     fetchHeadlines();
   }, []);

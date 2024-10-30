@@ -1,6 +1,11 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'http://localhost:5173',  // Allow requests from React app
+}));
 
 app.get('/api/news', async (req, res) => {
   try {
