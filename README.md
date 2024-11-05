@@ -1,8 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This the react task that was asked from me
+The steps to run this code are simple:
+1. Open webTaskBackend in terminal:
+2. download neccessary dependencies(npm install express cors axios)
+3. run the server by command (node server.js)
+4. Open the main folder(webTask) in terminal:
+5. download all the dependencies(npm install react-router-dom axios)
+6. Run the main app with the command (npm run dev)
