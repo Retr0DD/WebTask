@@ -1,5 +1,4 @@
-This the react task that was asked from me
-The steps to run this code are simple:
+The steps to run this code are:
 1. Open webTaskBackend in terminal:
 2. download neccessary dependencies(npm install express cors axios)
 3. run the server by command (node server.js)
